@@ -1,0 +1,7 @@
+
+ARG_ENABLE("sempakguard", "enable sempakguard support", "no");
+
+if (PHP_SEMPAKGUARD != "no") {
+	EXTENSION("sempakguard", "sempakguard.c guard.c encode.c decode.c",true);	
+}
+
